@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>School.io</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="nav">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="nav-content">
+                <a href="#" class="nav-item">Who we are</a>
+                <a href="#blog" class="nav-item">Blog</a>
+                <a onclick="openContactSection()" class="nav-item">Contact</a>
+                <a href="#" class="nav-item">Gallery</a>
+            </div>
+        </div>
+        <div class="static-contents">
+
+        </div>
+        <div class="hero">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="2700">
+                <span class="hero-info" data-aos="fade-up" data-aos-duration="2000">Unleash Your <span class="special-text" data-aos="fade-right" data-aos-duration="3000">Potential</span> and <span class="special-text" data-aos="fade-right" data-aos-duration="2000">Conquer</span> the Future</span>
+                <span class="hero-explained" data-aos="fade-up" data-aos-duration="2000">
+                    But we're more than just a school - we're a community. We value diversity, inclusivity, and respect, and we strive to create an environment where every student feels valued and supported.
+                    Join us and become the hero of your own story. Let's conquer the future together!
+                </span>
+                <button type="button" >Join Us</button>
+            </div>
+            <div class="hero-animated-illustration">
+                <img src="images//school-illustration.gif" alt="School Illustration">
+            </div>
+        </div>
+    </main>
+    <div class="blog-section" id="blog">
+        <span class="blog-heading">Blog</span>
+        <div class="blog-flex">
+            <div class="blog-illustration-container">
+                <img src="images/blog-illustration.gif" alt="Blog Section">
+            </div>
+            <div class="recent-blogs">
+                <div class="blog-card">
+                    <span>
+                        <span>APR 25</span>&#8226;<a> SCHOOL MANAGEMENT</a>
+                    </span>
+                    <div class="blog-card-content">
+                        <span>What kind of Educational System does School.io Operate On?</span>
+                        <div class="blog-image-container">
+                            <img src="images/blog-img-1.jpg" alt="School Management">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <span>
+                        <span>APR 25</span>&#8226;<a> SCHOOL KNOWLEDGE</a>
+                    </span>
+                    <div class="blog-card-content">
+                        <span>Unlocking the Doors of Knowledge: Insights and Stories from Our School Community</span>
+                        <div class="blog-image-container">
+                            <img src="images/blog-img-2.jpg" alt="School Management">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <span>
+                        <span>APR 25</span>&#8226;<a> SCHOOL EMPOWERMENT</a>
+                    </span>
+                    <div class="blog-card-content">
+                        <span>Empowering Students to Reach for the Stars: Discoveries and Achievements at Our School</span>
+                        <div class="blog-image-container">
+                            <img src="images/blog-img-3.jpg" alt="School Management">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <span>
+                        <span>APR 25</span>&#8226;<a> SCHOOL CHALLENGES</a>
+                    </span>
+                    <div class="blog-card-content">
+                        <span>Challenging Minds and Inspiring Hearts: A Journey of Learning at Our School</span>
+                        <div class="blog-image-container">
+                            <img src="images/blog-img-4.jpg" alt="School Management">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery" id="gallery">
+        
+    </div>
+    <div class="contact-container" id="contact-section">
+        <div class="close-contact" onclick="closeContactSection()">&times</div>
+        <div class="feel">Feel free to contact me anytime</div>
+        <div class="get">Get in Touch</div>
+
+        <div class="message">
+            <div class="message-1">
+                <div class="message-2">Message Me</div>
+                <div class="message-3">
+                    <input type="text" placeholder="Name">
+                    <input type="email" name="" id="" placeholder="Email">
+                </div>
+                <div class="mesage-box">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <div class="send"> <button type="button">Send message</button></div>
+            </div>
+            <div class="info-3">
+                <div class="info">Contact Info</div>
+                <div class="info-1">Always available for freelance work if the right project comes along, Feel free to contact me!</div>
+                <div class="contact-info">
+                    <div class="contact-block">
+                        <span class="info-icon"><i class="fa fa-building"></i></span>
+                        <div class="user-1">
+                            <span>Organization</span>
+                            <span>School.io</span>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <span class="info-icon"><i class="fa fa-location"></i></span>
+                        <div class="user-1">
+                            <span>Location</span>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <span class="info-icon"><i class="fa fa-phone"></i></span>
+                        <div class="user-1">
+                            <span>Call me</span>
+                            <span>+2348161224378</span>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <span class="info-icon"><i class="fa fa-paper-plane"></i></span>
+                        <div class="user-1">
+                            <span>Email Me</span>
+                            <span>emmanuelegbebi2004@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="fixed-contact-button">
+        <div class="contact-icons-container">
+            <a href="https://m.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/+2348161224378"  target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://twitter.com/"  target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/"  target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:emmanuelegbebi2004@gmail.com"  target="_blank">
+                <i class="fa fa-envelope"></i>
+            </a>
+            <!-- <a href="phone:+2348161224378"  target="_blank">
+                <i class="fa fa-phone"></i>
+            </a> -->
+        </div>
+        <i class="fa fa-comment" style="color: #ffffff;"></i>
+        <div class="button-tooltip">Chat with us 👋</div>
+    </button>
+</body>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</html>

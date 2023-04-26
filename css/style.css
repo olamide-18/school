@@ -1,0 +1,241 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+    scroll-snap-align: center;
+    scroll-padding: 0px;
+    scroll-snap-stop: always;
+    scroll-snap-coordinate: 0% 0%;
+    scroll-snap-destination: 0% 0%;
+    overscroll-behavior: none;
+    scroll-snap-points-y: repeat(100%);
+    scroll-snap-stop: always;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
+    scroll-snap-align: center;
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
+    scroll-snap-align: end;
+}
+
+html::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+    padding: 5px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #ababab;
+    border-radius: 20px;
+}
+
+main {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+*{
+    font-family: 'Product Sans';
+    user-select: none !important;
+    -webkit-user-select: none !important;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #212121; */
+}
+
+.nav{
+    display: flex;
+    justify-content:space-between ;
+}
+
+.nav-content a{
+    cursor: pointer;
+}
+
+.logo-container img{
+    width: 170px;
+    padding: 15px;
+}
+
+.nav-content{
+    padding: 15px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #212121;
+}
+
+.nav-item:hover{
+    transition: 0.2s ease-in-out-in-out all;
+    color: #fe8130;
+}
+
+.hero-animated-illustration img{
+    border: none !important;
+    width: 600px;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.hero-text{
+    font-size: 4rem;
+    font-weight: medium;
+    /* width: 700px; */
+}
+
+.special-text{
+    color: #fe8130;
+}
+
+.hero-explained{
+    display: block;
+    font-size: 1.4rem;
+    padding: 20px 0px;
+    color: #8795a1;
+}
+
+.hero-text button{
+    padding: 15px;
+    border-radius: 10px;
+    outline: none !important;
+    font-size: 18px;
+    width: 150px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #fe8130;
+    border: 2px solid #fe8130;
+    transition: 0.5s ease-in-out all;
+}
+
+.hero-text button:hover{
+    border: 2px solid #fe8130;
+    background-color: #fe8130;
+    color: #fff;
+}
+
+.contact-icons-container{
+    position: fixed;
+    bottom: 120px;
+    right: 42px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+    transition: 0.3s ease-in-out all;
+}
+
+.contact-icons-container a{
+    font-size: large;
+    color: #fff;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    box-shadow: 0px 0px 3px 0.5px #64646455;
+    animation: scaleup 0.3s linear 1;
+    transition: 0.3s ease-in-out all;
+}
+
+@keyframes scaleup {
+    from{
+        transform: scale(0.7);
+        transform: translateY(10px);
+    }
+    to{
+        transform: scale(1.1);
+        transform: translateY(0);
+    }
+}
+
+.contact-icons-container a:first-child{
+    background-color: #1778F2;
+    animation-delay: 0.5s;
+}
+
+.contact-icons-container a:nth-child(2){
+    background-color: #25D366;
+    animation-delay: 0.4s;
+}
+
+.contact-icons-container a:nth-child(3){
+    background-color: #1DA1F2;
+    animation-delay: 0.3s;
+}
+
+.contact-icons-container a:nth-child(4){
+    background: linear-gradient(0deg, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);
+    animation-delay: 0.2s;
+}
+
+.contact-icons-container a:nth-child(5){
+    background: darkblue;
+    animation-delay: 0.1s;
+}
+
+.fixed-contact-button{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: x-large;
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    border: none;
+    background-color: #fe8130;
+    color: #fff;
+    transition: 0.3s ease-in-out all;
+    cursor: pointer;
+    animation: bounce 0.7s ease-in-out alternate infinite;
+}
+
+.fixed-contact-button:hover{
+    animation-play-state: paused;
+}
+
+@keyframes bounce{
+    to{
+        bottom: 60px;
+    }
+}
+
+.button-tooltip{
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 0.3px #45454555;
+    margin-top: -5px;
+    left: -150px;
+    width: 120px;
+    display: inline-block;
+    color: #212121;
+    font-size: 16px;
+}
+
+.fixed-contact-button:hover .contact-icons-container{
+    display: flex;
+}
