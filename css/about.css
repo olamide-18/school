@@ -1,0 +1,60 @@
+.about-us{
+    position: fixed;
+    background-color: #212121;
+    width: 25%;
+    top: 0px;
+    right: 0;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    color: #fff;
+    overflow-y: auto;
+    transition: 0.3s ease all;
+    animation: slidein 1s ease-in-out 1;
+}
+
+@keyframes slidein {
+    from{
+        right: -100%;
+    }
+    to{
+        right: 0;
+    }
+}
+.abt-header{
+    font-size: x-large;
+    margin-left: 20px;
+}
+
+.about-us-heading{
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #212121;
+    width: 25%;
+    top: 0;
+    padding-top: 30px;
+}
+
+.about-us-heading .close-btn{
+    color: #eee;
+    font-size: xx-large;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    margin-right: 20px;
+}
+
+.about-us-heading .close-btn:hover{
+    color: tomato;
+}
+
+.who-we-are{
+    padding: 20px;
+    font-size: 18px;
+    margin-top: 50px;
+    color: #ababab;
+}

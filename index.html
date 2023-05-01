@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/blog.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -20,14 +23,19 @@
                 <img src="images/logo.png" alt="">
             </div>
             <div class="nav-content">
-                <a href="#" class="nav-item">Who we are</a>
+                <a onclick="openAboutSection()" class="nav-item">Who we are</a>
                 <a href="#blog" class="nav-item">Blog</a>
                 <a onclick="openContactSection()" class="nav-item">Contact</a>
-                <a href="#" class="nav-item">Gallery</a>
+                <a href="#gallery" class="nav-item">Gallery</a>
             </div>
         </div>
         <div class="static-contents">
 
+        </div>
+        <div id="loader">
+            <div class="loader-item">
+                <img src="images/load-1.gif" alt="Loader">
+            </div>
         </div>
         <div class="hero">
             <div class="hero-text" data-aos="fade-right" data-aos-duration="2700">
@@ -98,7 +106,16 @@
         </div>
     </div>
     <div class="gallery" id="gallery">
-        
+        <span class="gallery-header">Gallery</span>
+        <div class="grid-images">
+            <div class="image-container"><img src="images/lab-1.jpg" alt="lab-1"></div>
+            <div class="image-container"><img src="images/lab-2.jpg" alt=""></div>
+            <div class="image-container"><img src="images/lab-3.jpg" alt=""></div>
+            <div class="image-container"><img src="images/lab-4.jpg" alt=""></div>
+            <div class="image-container"><img src="images/lab-5.jpg" alt=""></div>
+            <div class="image-container"><img src="images/lab-6.jpg" alt=""></div>
+            <div class="image-container"><img src="images/lab-7.jpg" alt=""></div>
+        </div>
     </div>
     <div class="contact-container" id="contact-section">
         <div class="close-contact" onclick="closeContactSection()">&times</div>
@@ -154,8 +171,25 @@
             </div>
         </div>
     </div>
-    <div class="about-us">
-        <span class="abt-header">Who We Are</span>
+    <div class="about-us" id="about-section">
+        <div class="about-us-heading">
+            <span class="abt-header">Who We Are</span>
+            <span class="close-btn" onclick="closeAboutSection()">&times</span>
+        </div>
+        <div class="who-we-are">
+            <p>Welcome to school.io, a comprehensive educational platform designed to make learning easier and more accessible for everyone. At school.io, we believe that education is the key to unlocking personal and societal growth, and we are committed to providing the tools and resources necessary for every student to succeed.</p>
+            <p>Our team is made up of experienced educators, technologists, and designers who share a passion for creating innovative learning solutions. We believe that education should be engaging, personalized, and relevant to each student's unique needs and interests.</p>
+            <p>Whether you are a student, a teacher, or a parent, school.io has something for you. Our platform features a wide range of resources, including interactive lessons, practice exercises, and assessments, all designed to help you achieve your learning goals. We also offer personalized coaching and support to help you stay on track and make the most of your educational experience.</p>
+            <p>At school.io, we are committed to staying at the forefront of educational technology and innovation. We are constantly exploring new ideas and developing new tools to help students and educators reach their full potential. So whether you are looking to improve your skills, advance your career, or simply learn something new, school.io is here to help.</p>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <div class="footer-section">
+
+        </div>
+        <div class="footer-section-two">
+            
+        </div>
     </div>
     <button class="fixed-contact-button">
         <div class="contact-icons-container">
@@ -181,6 +215,23 @@
         <i class="fa fa-comment" style="color: #ffffff;"></i>
         <div class="button-tooltip">Chat with us 👋</div>
     </button>
+    <!-- <div class="footer">
+        <span class="copyright">All rights reserved, Copyright 223</span>
+        <div class="footer-icons">
+            <a href="https://facebook.com/">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-discord"></i>
+            </a>
+        </div>
+    </div> -->
 </body>
 <script src="js/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
